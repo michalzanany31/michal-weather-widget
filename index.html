@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="module" src="./modules/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="./weather.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/img/sun.svg">
+</head>
+
+<body>
+    <div id="widget">
+        <div>
+            <h1 id="location"></h1>
+        </div>
+        <div class="weather-data">
+            <div class="temp-data">
+                <div class="temp">
+                    <h1 id="temp"></h1>
+                    <h1 class="celsius-degree">O</h1>
+                    <h1 class="celsius">C</h1>
+                </div>
+                <div class="wind-data">
+                    <h1>S</h1>
+                    <h1 id="wind"></h1>
+                    <h1>km/h</h1>
+                </div>
+            </div>
+            <div class="sun-icon">
+                <div>
+                    <img src="./assets/img/sun-white.svg" alt="sun-icon" style="height:40px;">
+                </div>
+                <div>
+                    <h1 id="main"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader" id="loader"></div>
+
+    <div class="error-message" id="error">
+        <h1 id=error-message>Oops...</h1>
+        <p>Something went wrong, please make sure all data is correct </p>
+    </div>
+</body>
+
+</html>
